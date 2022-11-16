@@ -67,7 +67,7 @@ public class Guesser {
       System.out.println("You must enter T or F (true or false)");
       reply = System.console().readLine();
     }
-    return reply;
+    return reply.toUpperCase();
   }
 
   private void doGuesses() {
