@@ -1,0 +1,14 @@
+När använder man add respektive commit?
+Add när man vill lägga till en fil till staging area. 
+Commit när man vill utföra ändringarna.
+
+Vad är pull repektive push?
+Pull när man vill hämta ändringar från remote. 
+Push när man vill skicka ändringarna.
+
+När använder man log respektive status?
+Log när man vill se en lista på commits med respektive meddelanden.
+Status när man vill se vilka förändringar som gjorts och inväntar commits/adds
+
+Hur kan man formulera sig i sina commit-meddelanden?
+t.ex "Adding frågor.txt". I presens. 
