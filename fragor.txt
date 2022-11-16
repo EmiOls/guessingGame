@@ -12,3 +12,25 @@ Status när man vill se vilka förändringar som gjorts och inväntar commits/ad
 
 Hur kan man formulera sig i sina commit-meddelanden?
 t.ex "Adding frågor.txt". I presens. 
+
+Siktar på VG
+Man använder git revert och git reset
+git reset återgår till stadiet av en tidigare commit och tar bort allt ovanför.
+git revert återgår till stadiet av en tidigare commit och skapar en ny commit av det gamla stadiet. Överst.
+
+git reset passar bra när man jobbar lokalt eller i en privat branch.
+git revert passar bra när man vill visa vad man gör. När man jobbar i grupp eller en delad branch.
+
+Exempel:
+git reset --hard a76ccd2
+Output:
+HEAD is now at a76ccd2 a lot of stuff
+
+Exempel:
+git revert 762b7a4
+Resultat:
+Nya commiten öppnas i textredigerare. Där får jag skriva ett meddelande för min nya commit. 
+Output:
+[master 32d74d9] Revert "stupid move"
+ 1 file changed, 7 insertions(+)
+ create mode 100644 hello.java
